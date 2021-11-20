@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <header>
+        <div class="left"><img src="static/menu.svg"> ... </div>
+        <div class="right">Admin</div>
+    </header>
+    <div class="menu">
+        <div><a href="#">Main</a></div>
+        <div><a href="#">SSH</a></div>
+        <div><a href="#">Logs</a></div>
+        <div><a href="#">Info</a></div>
+        <div><a href="#">Settings</a></div>
+    </div>
+    <div class="main">
+        <div>
+            <section class="href">Project / Statistic</section>
+            <info class="st norm"> </info><p>CPU: <span>0%</span> / ...</p><br>
+            <info class="st high"> </info><p>Memory: <span>0%</span> / 500MB</p><br>
+            <info class="st norm"> </info><p>Internet: <span>0Kib/s</span></p><br>
+            <info class="st middle"> </info><p>Disk: <span>0.01G</span> / 1G</p><br>
+        </div>
+        <div>
+            <section class="href">Project / SSH</section>
+            <info class="st norm"> </info><p>ssh root@<span>...</span> -p ...</p>
+        </div>
+    </div>
+{% endblock content %}
